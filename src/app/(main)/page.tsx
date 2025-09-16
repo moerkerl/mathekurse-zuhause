@@ -91,7 +91,7 @@ export default function Home() {
             </span>
           </>
         }
-        subtitle="Ob Algebra, Geometrie, Analysis oder Statistik – wir zeigen Ihnen sofort passende Mathekurse und Lehrer."
+        subtitle="Ob Mathematik, Geometrie, Algebra oder Statistik – wir zeigen Ihnen sofort passende Mathekurse und Lehrer."
         buttonText="Jetzt Mathekurs finden"
         imageSrc="/images/erwachsener-finanzmathematik-lernen-homeoffice-tutor-analyse-mathe-helden.jpg"
         imageAlt="Individuelle Mathekurse mit geprüften Lehrpersonen"
