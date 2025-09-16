@@ -3,8 +3,8 @@
 import { useEffect, useRef } from 'react'
 import { getStoredTrackingParams, getGoogleClickId } from '@/lib/tracking'
 
-const GA_ADS_ID = 'AW-16937882209'
-const CONVERSION_LABEL = '6V7oCNbRtYkbEOGkzow_'
+const GA_ADS_ID = 'AW-17574721973' // Google Ads ID für mathekurse-zuhause
+const CONVERSION_LABEL = 'kT1OCMySmJwbELXzo7xB' // Conversion Label für Lead-Formular
 
 export default function ConversionTracker() {
   const hasInitialized = useRef(false)
@@ -48,7 +48,7 @@ export default function ConversionTracker() {
         const gclid = getGoogleClickId();
         
         // Generate unique transaction ID to prevent duplicates
-        const transactionId = `sprachkurs_lead_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        const transactionId = `mathekurs_lead_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         
         // Double-check that conversion hasn't been sent yet
         if (window.sessionStorage.getItem('google_ads_conversion_tracked')) {
@@ -63,7 +63,7 @@ export default function ConversionTracker() {
         // Send Google Ads conversion event
         window.gtag('event', 'conversion', {
           'send_to': `${GA_ADS_ID}/${CONVERSION_LABEL}`,
-          'value': 1.0,
+          'value': 50.0,
           'currency': 'CHF',
           'transaction_id': transactionId,
           'custom_parameters': {

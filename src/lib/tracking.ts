@@ -113,7 +113,7 @@ export function sendTrackingToGoogleAnalytics(): void {
     if (trackingData.params.utm_term) config.campaign_term = trackingData.params.utm_term;
     if (trackingData.params.utm_content) config.campaign_content = trackingData.params.utm_content;
     
-    window.gtag('config', 'AW-16937882209', config);
+    window.gtag('config', 'AW-17574721973', config);
     
     console.log('Tracking parameters sent to Google Analytics:', config);
   } catch (error) {
